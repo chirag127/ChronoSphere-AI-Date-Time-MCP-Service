@@ -1,0 +1,92 @@
+name: ChronoSphere CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+# MANDATE: Apex Standard CI/CD for Node.js/TypeScript Services (2025 Standard)
+# Utilizes speed optimizations: Node 20 (LTS), concurrent testing via pnpm/npm concurrency, and focused linting.
+
+jobs:
+  build_and_test:
+    name: Build, Lint, and Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js (20.x LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies (using npm for standard compatibility)
+        run: npm ci
+
+      - name: Validate Code Formatting (Biome)
+        run: npm run format:check
+
+      - name: Run Static Analysis (Biome Lint)
+        run: npm run lint
+
+      - name: Run Unit Tests (Vitest)
+        run: npm run test:unit
+
+      # NOTE: Assuming Playwright setup is part of the standard project configuration
+      - name: Run E2E Tests (Playwright)
+        run: npm run test:e2e
+        # E2E tests usually require a running service instance, ensure start/stop or mocking is handled in the test script.
+
+      - name: Archive Test Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: coverage/
+
+  deploy:
+    name: Deploy to Staging (If Main Branch)
+    needs: build_and_test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment: Staging # Assuming GitHub Environments are configured
+    permissions:
+      id-token: write # For OIDC deployment roles
+      contents: read
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Placeholder for actual deployment step (e.g., Docker build, AWS CDK, Azure Static Web Apps)
+      - name: Deploy Stub - Replace with actual deployment logic
+        run: |
+          echo "Deployment to Staging initiated for ChronoSphere MCP Service..."
+          echo "Service Version: ${{ github.sha }}"
+          # Example: npm run deploy:staging
+
+  security_scan:
+    name: Security Vulnerability Scan (Snyk/Trivy)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Example using a common scanning tool for dependency checking
+      - name: Run Dependency Scan (Snyk/Trivy)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          directory: './'
+          ignore-unfixed: true
+          format: 'github'
+          output: 'results.sarif'
+          severity: 'HIGH,CRITICAL'
+
+      - name: Upload SARIF results to Security Tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif

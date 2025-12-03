@@ -1,188 +1,140 @@
-# ChronoSphere-AI-Date-Time-MCP-Service
+# SYSTEM: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION) - PROPOSED ARCHIVAL DIRECTIVE
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/ci.yml?style=flat-square&logo=githubactions)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions)
-[![Code Coverage](https://img.shields.io/codecov/c/github/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&logo=codecov)](https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service)
-[![Tech Stack](https://img.shields.io/badge/TypeScript-NodeJS-API-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgreen?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&logo=github)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service)
+## 1. IDENTITY & PRIME DIRECTIVE
+**Role:** You are a Senior Principal Software Architect and Master Technical Copywriter with **40+ years of elite industry experience**. You operate with absolute precision, enforcing FAANG-level standards and the wisdom of "Managing the Unmanageable."
+**Context:** Current Date is **December 2025**. You are building for the 2026 standard.
+**Output Standard:** Deliver **EXECUTION-ONLY** results. No plans, no "reporting"—only executed code, updated docs, and applied fixes.
+**Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
-## ChronoSphere: AI-Powered Temporal Context Service
+---
 
-ChronoSphere is a sophisticated Model Context Protocol (MCP) server engineered to provide AI agents with highly accurate, real-time date and time information across diverse timezones and locales. It ensures precise temporal data access, acting as a critical context provider for advanced AI operations, especially those integrating with platforms like Claude for Desktop.
-
-<details>
-<summary><strong>🤖 AI Agent Directives (v1.0.0 - December 2025 Standard)</strong></summary>
-
-## APEX TECHNICAL AUTHORITY DIRECTIVES
-
-### 1. IDENTITY & PRIME DIRECTIVE
-*   **Role:** Senior Principal Software Architect, Master Technical Copywriter, DevOps Strategist with 40+ years of elite industry experience.
-*   **Context:** Current Date is **December 2025**. Building for the 2026 standard.
-*   **Output Standard:** EXECUTION-ONLY. No plans, only executed code and updated docs.
-*   **Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
-
-### 2. INPUT PROCESSING & COGNITION
+## 2. INPUT PROCESSING & COGNITION
 *   **SPEECH-TO-TEXT INTERPRETATION PROTOCOL:**
     *   **Context:** User inputs may contain phonetic errors (homophones, typos).
     *   **Semantic Correction:** **STRICTLY FORBIDDEN** from executing literal typos. You must **INFER** technical intent based on the project context.
     *   **Logic Anchor:** Treat the `README.md` as the **Single Source of Truth (SSOT)**.
 *   **MANDATORY MCP INSTRUMENTATION:**
-    *   **No Guessing:** Do not hallucinate APIs.
-    *   **Research First:** Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 UI Trends**.
-    *   **Validation:** Use `docfork` to verify *every* external API signature.
-    *   **Reasoning:** Engage `clear-thought-two` to architect complex flows *before* writing code.
+    *   **No Guessing:** Do not hallucinate APIs. Do not assume default values unless explicitly documented.
+    *   **Research First:** Use `linkup`/`brave` to search for **December 2025 Industry Standards**, **Security Threats**, and **2026 API Trends** related to time services and Node.js.
+    *   **Validation:** Use `docfork` to verify *every* external dependency signature.
+    *   **Reasoning:** Engage `clear-thought-two` to architect complex asynchronous time-sync flows *before* writing code.
 
-### 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
-*   **PRIMARY SCENARIO: WEB / APP / EXTENSION (TypeScript)**
-    *   **Stack:** This project leverages **TypeScript 6.x (Strict)** and **Node.js 22.x LTS**. Key tools include **Vite 7** (for optimal build performance), **Biome** (for ultra-fast linting and formatting), and **Vitest** (for robust unit and integration testing). **Playwright** is employed for end-to-end testing.
-    *   **Architecture:** Adheres to **Feature-Sliced Design (FSD)** principles, ensuring clear separation of concerns, maintainability, and scalability for the temporal context service.
-    *   **API Layer:** Utilizes standard Express.js or Fastify patterns for robust API endpoint management.
-    *   **Temporal Logic:** Leverages robust libraries like `date-fns-tz` or `Luxon` for accurate timezone and date manipulations.
+---
 
-### 4. DEVELOPMENT STANDARDS & WORKFLOWS
-*   **Setup:** Standard `git clone` followed by `npm install`.
-*   **Scripts:** Defined in `package.json` for `dev`, `build`, `test`, `lint`, `format`.
-*   **Verification Commands:**
-    *   `npm run lint`: Executes Biome to enforce code quality and style.
-    *   `npm run test`: Runs Vitest for unit and integration tests.
-    *   `npm run e2e`: Executes Playwright for end-to-end validation.
-    *   `npm run build`: Compiles the TypeScript project using Vite.
-    *   `npm run dev`: Starts the development server with hot-reloading.
-*   **Principles:** Adherence to SOLID, DRY, YAGNI, and KISS principles.
+## 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
+**Directives:** This repository is designated as a high-performance service component.
 
+*   **PRIMARY SCENARIO: SYSTEMS / API (NodeJS/TypeScript)**
+    *   **Stack:** This project mandates **TypeScript 5.x (Strict Mode)**, utilizing **Node.js 22+ LTS**. Core dependencies will be managed via **pnpm** for workspace efficiency and deterministic builds. HTTP layer leverages **Fastify** for maximal throughput performance over Express.
+    *   **Architecture:** Adheres to a **Ports and Adapters (Hexagonal)** pattern. The core domain logic (time calculation, timezone conversion) is isolated from the I/O (HTTP/Adapter). This ensures supreme testability and platform independence.
+    *   **AI Integration:** Designed for low-latency consumption by AI agents. Responses must be strictly ISO 8601 compliant, using dedicated timezone serialization libraries (e.g., Luxon or date-fns-tz) rather than native Date object manipulation where possible.
+    *   **Testing Framework:** Vitest/Playwright for high-speed unit/integration validation.
+
+---
+
+## 4. DEVELOPMENT STANDARDS & VERIFICATION
+
+### Setup Commands
+
+bash
+# 1. Clone the repository
+git clone https://github.com/chirag127/ChronoSphere-AI-Time-Service-NodeJS-API.git
+cd ChronoSphere-AI-Time-Service-NodeJS-API
+
+# 2. Install dependencies using pnpm (Mandatory)
+pnpm install
+
+# 3. Initial Lint and Type Check
+pnpm run typecheck
+
+
+### Core Scripts Table
+
+| Script | Command | Description | Environment | 
+| :--- | :--- | :--- | :--- |
+| **Run Dev** | `pnpm dev` | Starts the Fastify server in watch mode. | Development |
+| **Build** | `pnpm build` | Compiles TypeScript to production-ready JavaScript. | CI/Production |
+| **Test** | `pnpm test` | Runs Vitest unit and integration tests. | CI/Development |
+| **Lint** | `pnpm lint` | Executes Biome check for style and errors. | Pre-Commit |
+| **Type Check**| `pnpm typecheck` | Runs the TypeScript compiler in strict mode. | CI/Pre-Build |
+
+### Guiding Principles
+*   **SOLID:** Applied rigorously, especially Dependency Inversion (D) for time source adapters.
+*   **DRY:** Centralized time serialization schema management.
+*   **YAGNI:** No superfluous features. This service does *one* thing perfectly: accurate time delivery.
+
+---
+
+<details>
+<summary>🤖 **AI AGENT DIRECTIVES: ARCHITECTURE & VERIFICATION**</summary>
+
+### AGENT_DIRECTIVES_V2025.12
+
+**Repository Context:** `ChronoSphere-AI-Time-Service-NodeJS-API` (High-Performance TypeScript/Fastify Service).
+
+**Primary Objective:** Provide atomic, contextually correct, and low-latency time data for downstream AI agents.
+
+**1. CORE ARCHITECTURAL PATTERN:** Hexagonal Architecture (Ports & Adapters).
+    *   **Domain Layer (Core):** Contains pure logic (timezone math, UTC conversion rules). **MUST NOT** import any I/O modules (like `fastify` or database drivers).
+    *   **Driving Adapter (API):** Implements the external interface (HTTP routes via Fastify).
+    *   **Driven Ports (Interfaces):** Defines contracts for external services (e.g., NTP synchronization checker).
+
+**2. TECHNICAL STACK LOCKDOWN:**
+    *   **Language:** TypeScript 5.x (tsconfig `strict: true` is non-negotiable).
+    *   **Framework:** Fastify (prioritize `pino` logging integration).
+    *   **Time Handling:** **Mandatory Use of Luxon** for all external-facing time representations. The internal UTC representation should be kept as milliseconds since epoch for maximal performance.
+
+**3. VERIFICATION COMMANDS (Self-Correction Protocol):**
+    *   **LINT/FORMAT:** `pnpm lint` (Biome).
+    *   **TYPE SAFETY:** `pnpm typecheck`.
+    *   **UNIT VALIDATION:** `pnpm test:unit` (Ensure all Ports/Adapters mocks are correctly implemented).
+    *   **INTEGRATION VALIDATION:** `pnpm test:integration` (Verify actual HTTP response structures against the defined JSON schema for time objects).
+
+**4. SECURITY DIRECTIVE:**
+    *   **Rate Limiting:** Must be active on all non-internal endpoints via Fastify plugins.
+    *   **Input Sanitization:** All query/path parameters must be strictly validated against expected data types (e.g., timezone strings must match IANA standards).
+
+**5. DEPLOYMENT TARGET:** Kubernetes/Containerized Environment.
 </details>
 
 ---
 
-## Table of Contents
+## Architecture Overview (Simplified Hexagonal View)
 
-*   [About](#about)
-*   [Key Features](#key-features)
-*   [Architecture](#architecture)
-*   [Getting Started](#getting-started)
-*   [Development](#development)
-*   [Testing](#testing)
-*   [Contributing](#contributing)
-*   [License](#license)
-
----
-
-## About
-
-ChronoSphere provides a high-performance, reliable Model Context Protocol (MCP) service. It acts as an authoritative source for accurate date, time, and timezone information, crucial for AI agents requiring temporal context. This service bridges the gap between raw system clocks and the nuanced temporal requirements of AI models and their applications.
-
-## Key Features
-
-*   **Real-time Temporal Data:** Provides up-to-the-second date and time.
-*   **Multi-Timezone Support:** Accurately handles and converts between numerous global timezones.
-*   **Locale-Aware Formatting:** Delivers dates and times formatted according to specified locale standards.
-*   **MCP Compliance:** Implements the Model Context Protocol for seamless AI agent integration.
-*   **High Availability:** Designed for robust uptime to support continuous AI operations.
-*   **Extensible API:** Built on a modern Node.js stack for easy integration and extension.
-
-## Architecture
-
-ChronoSphere follows a Feature-Sliced Design (FSD) architecture, ensuring modularity and maintainability. The core components include:
-
-mermaid
-graph TD
-    A[Client Request (AI Agent)] --> B(API Gateway / Server Entrypoint)
-    B --> C{MCP Request Handler}
-    C --> D(Temporal Logic Service)
-    D --> E[Date/Time Library (e.g., date-fns-tz)]
-    D --> F(Timezone Database)
-    D --> G(Locale Formatting Engine)
-    D --> H(MCP Response Formatter)
-    H --> B
-    B --> A
+ascii
+                                +-----------------------------+
+                                |      EXTERNAL CONSUMER      |
+                                | (e.g., AI Agent / Client)   |
+                                +--------------+--------------+
+                                               |
+                             (HTTP Requests) v
++--------------------------------+    +------------------------+
+|   DRIVING ADAPTER (API Layer)  |    |   DRIVEN PORT (Interface)|
+|   (Fastify Routes, Input)      |<-->| TimeQueryPort (Contract) |
++--------------------------------+    +------------+-------------+
+                |                                  |
+                v (Dependencies)                 | (Implementation)
++--------------------------------+    +------------------------+
+|    APPLICATION SERVICES LAYER  |    |   DRIVEN ADAPTER (Time)  |
+| (Business Logic Orchestration) |    | (Luxon Wrapper/NTP Sync) |
++--------------------------------+    +--------------------------+
 
 
-## Getting Started
 
-### Prerequisites
-
-*   Node.js LTS (v20+ recommended)
-*   npm or Yarn package manager
-
-### Installation
-
-1.  **Clone the repository:**
-    bash
-    git clone https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service.git
-    cd ChronoSphere-AI-Date-Time-MCP-Service
-    
-
-2.  **Install dependencies:**
-    bash
-    npm install
-    # or
-    # yarn install
-    
-
-## Development
-
-### Running in Development Mode
-
-This command starts the development server with hot-reloading, enabling rapid iteration.
-
-bash
-npm run dev
-# or
-# yarn dev
+## Project Structure (High Level)
 
 
-### Building for Production
-
-This command compiles the TypeScript project into optimized JavaScript for deployment.
-
-bash
-npm run build
-# or
-# yarn build
-
-
-## Testing
-
-### Running Tests
-
-Execute all unit and integration tests using Vitest.
-
-bash
-npm run test
-# or
-# yarn test
-
-
-### Running End-to-End Tests
-
-Validate the entire service flow with Playwright.
-
-bash
-npm run e2e
-# or
-# yarn e2e
-
-
-### Linting and Formatting
-
-Ensure code quality and consistency with Biome.
-
-bash
-npm run lint
-# or
-# yarn lint
-
-npm run format
-# or
-# yarn format
-
-
----
-
-## Contributing
-
-Contributions are welcome! Please refer to the [CONTRIBUTING.md](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/blob/main/.github/CONTRIBUTING.md) file for detailed guidelines.
-
-## License
-
-This project is licensed under the CC BY-NC 4.0 License - see the [LICENSE](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/blob/main/LICENSE) file for details.
+src/
+├── adapters/
+│   ├── driving/
+│   │   └── http/           # Fastify Setup & Routes
+│   └── driven/
+│       └── time_source/    # Implementations for time acquisition (Luxon/External APIs)
+├── core/
+│   ├── domain/
+│   │   └── models.ts       # Strict Data Transfer Objects (DTOs)
+│   └── ports/
+│       └── time_ports.ts   # Interfaces (Ports)
+├── services/
+│   └── time_service.ts     # Core Business Logic (Orchestration)
+└── server.ts               # Entry Point (Boots infrastructure)

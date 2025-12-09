@@ -1,27 +1,30 @@
-build:
-  services:
-    - github-actions
-
-image::
-  remote:
-    url: "https://raw.githubusercontent.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/main/assets/logo.png"
-
 badges:
   - name: "Build Status"
-    image: "https://img.shields.io/github/actions/workflow/status/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/ci.yml?style=flat-square"
-    url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml"
+    image_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml/badge.svg?branch=main&style=flat-square"
+    target_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml"
+    markdown_code: "[![Build Status](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml/badge.svg?branch=main&style=flat-square)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml)"
+
   - name: "Code Coverage"
-    image: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/branch/main/graphs/badge.svg?token=YOUR_CODECOV_TOKEN"
-    url: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service"
-  - name: "Tech Stack - TypeScript"
-    image: "https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white"
-    url: "https://www.typescriptlang.org/"
-  - name: "Tech Stack - NodeJS"
-    image: "https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"
-    url: "https://nodejs.org/"
-  - name: "License: CC BY-NC 4.0"
-    image: "https://img.shields.io/badge/License-CC BY-NC 4.0-blue?style=flat-square"
-    url: "https://creativecommons.org/licenses/by-nc/4.0/"
+    image_url: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN&style=flat-square"
+    target_url: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service"
+    markdown_code: "[![Code Coverage](https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN&style=flat-square)](https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service)"
+
+  - name: "Tech Stack"
+    image_url: "https://img.shields.io/badge/Stack-TypeScript%20%7C%20Node.js-blueviolet?style=flat-square"
+    target_url: ""
+    markdown_code: "![Tech Stack](https://img.shields.io/badge/Stack-TypeScript%20%7C%20Node.js-blueviolet?style=flat-square)"
+
+  - name: "Lint & Format"
+    image_url: "https://img.shields.io/badge/Lint%20%26%20Format-Biome-000000?style=flat-square"
+    target_url: "https://biomejs.dev/"
+    markdown_code: "[![Lint & Format](https://img.shields.io/badge/Lint%20%26%20Format-Biome-000000?style=flat-square)](https://biomejs.dev/)"
+
+  - name: "License"
+    image_url: "https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square"
+    target_url: "https://creativecommons.org/licenses/by-nc/4.0/"
+    markdown_code: "[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
+
   - name: "GitHub Stars"
-    image: "https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square"
-    url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/"
+    image_url: "https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&cacheSeconds=3600"
+    target_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/stargazers"
+    markdown_code: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&cacheSeconds=3600)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/stargazers)"

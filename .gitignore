@@ -1,69 +1,45 @@
-# Node.js & TypeScript
-
-# Dependencies
-/node_modules
-
-# Build artifacts
-/dist
-/build
-/lib
-/.out
-*.tsbuildinfo
-
-# Logs
-logs
-*.log
+# Node.js
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-pnpm-debug.log*
+.pnpm-debug.log*
+.npm/
 
-# Runtime data
-.pids
-*.pid
-*.seed
-*.pid.lock
+# TypeScript
+*.tsbuildinfo
+dist/
+build/
 
-# Environment variables
+# Environment
 .env
-.env.*
-!.env.example
+.env.local
+.env.*.local
 
-# OS generated files
+# Logs
+log/
+*.log
+
+# OS
 .DS_Store
-._*
-.Spotlight-V100
-.Trashes
-Thumbs.db
-ehthumbs.db
-Desktop.ini
 
-# IDE & Editor directories
+# IDEs and Editors
+.vscode/
 .idea/
-.vscode/*
-!/.vscode/settings.json
-!/.vscode/tasks.json
-!/.vscode/launch.json
-!/.vscode/extensions.json
 *.sublime-project
 *.sublime-workspace
 
-# Test & Coverage reports
-/coverage
+# Testing
+coverage/
 .nyc_output/
-mochawesome-report/
-*.lcov
+
+# Dependency archives
+*.tgz
+*.zip
 
 # Temporary files
+tmp/
 *.tmp
-*.swp
 
-# Yarn specific (if using Yarn Berry)
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
+# AWS CloudFormation (if applicable for deployment)
+.aws-sam/

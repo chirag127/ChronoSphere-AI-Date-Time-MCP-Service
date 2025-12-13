@@ -1,30 +1,25 @@
 badges:
-  - name: "Build Status"
-    image_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml/badge.svg?branch=main&style=flat-square"
-    target_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml"
-    markdown_code: "[![Build Status](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml/badge.svg?branch=main&style=flat-square)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/actions/workflows/ci.yml)"
-
-  - name: "Code Coverage"
-    image_url: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN&style=flat-square"
-    target_url: "https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service"
-    markdown_code: "[![Code Coverage](https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN&style=flat-square)](https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-Service)"
-
-  - name: "Tech Stack"
-    image_url: "https://img.shields.io/badge/Stack-TypeScript%20%7C%20Node.js-blueviolet?style=flat-square"
-    target_url: ""
-    markdown_code: "![Tech Stack](https://img.shields.io/badge/Stack-TypeScript%20%7C%20Node.js-blueviolet?style=flat-square)"
-
-  - name: "Lint & Format"
-    image_url: "https://img.shields.io/badge/Lint%20%26%20Format-Biome-000000?style=flat-square"
-    target_url: "https://biomejs.dev/"
-    markdown_code: "[![Lint & Format](https://img.shields.io/badge/Lint%20%26%20Format-Biome-000000?style=flat-square)](https://biomejs.dev/)"
-
-  - name: "License"
-    image_url: "https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square"
-    target_url: "https://creativecommons.org/licenses/by-nc/4.0/"
-    markdown_code: "[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by-nc/4.0/)"
-
-  - name: "GitHub Stars"
-    image_url: "https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&cacheSeconds=3600"
-    target_url: "https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/stargazers"
-    markdown_code: "[![GitHub Stars](https://img.shields.io/github/stars/chirag127/ChronoSphere-AI-Date-Time-MCP-Service?style=flat-square&cacheSeconds=3600)](https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-Service/stargazers)"
+  - name: GitHub
+    image: https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github
+    url: https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API
+  - name: License
+    image: https://img.shields.io/badge/License-CC%20BY--NC-ff69b4?style=flat-square
+    url: https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API/blob/main/LICENSE
+  - name: TypeScript
+    image: https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white
+    url: https://www.typescriptlang.org/
+  - name: Node.js
+    image: https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white
+    url: https://nodejs.org/
+  - name: API
+    image: https://img.shields.io/badge/API-009085?style=flat-square&logo=api&logoColor=white
+    url: https://en.wikipedia.org/wiki/API
+  - name: MCP
+    image: https://img.shields.io/badge/MCP-00a3ff?style=flat-square
+    url: https://en.wikipedia.org/wiki/Model_Context_Protocol
+  - name: Build Status
+    image: https://img.shields.io/github/actions/workflow/status/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API/ci.yml?style=flat-square&logo=githubactions
+    url: https://github.com/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API/actions/workflows/ci.yml
+  - name: Code Coverage
+    image: https://img.shields.io/codecov/c/github/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API?style=flat-square&logo=codecov
+    url: https://codecov.io/gh/chirag127/ChronoSphere-AI-Date-Time-MCP-NodeJS-API
